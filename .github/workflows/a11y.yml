@@ -46,7 +46,6 @@ jobs:
             http://localhost:8000/about.html \
             --exit \
             --save axe-reports/results.json \
-            --dir axe-reports \
             2>&1 | tee axe-reports/axe-stdout.log
 
       - name: Upload axe report

@@ -19,6 +19,9 @@ jobs:
       - name: Install axe-cli
         run: npm install -g @axe-core/cli
 
+      - name: Sync Chrome and ChromeDriver
+        run: npx -y browser-driver-manager@latest install chrome
+
       - name: Start static server
         working-directory: site
         run: |
